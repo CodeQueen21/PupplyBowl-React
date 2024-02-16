@@ -8,11 +8,10 @@ import SinglePlayer from "./components/SinglePlayer";
 function App() {
   return (
     <div>
-      <MainContainer />
+      {/* <MainContainer /> */}
       <Navbar />
-      <NewPlayer />
+      {/* <NewPlayer /> */}
       <AllPlayers />
-      <SinglePlayer />
     </div>
   );
 }
