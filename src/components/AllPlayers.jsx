@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import fetchAllPlayers from "../ajaxHelpers";
-import SinglePlayer from "./SinglePlayer";
+import { fetchAllPlayers } from "../ajaxHelpers";
 import { useNavigate } from "react-router-dom";
 
 export default function AllPlayers() {
@@ -23,7 +22,9 @@ export default function AllPlayers() {
             <h4>{player.name}</h4>
             <img src={player.imageUrl} />
             <p>Status: {player.status}</p>
-            <button onclick={() => navigate("/SinglePlayer")}>Details</button>
+            <button onClick={() => navigate(`/players/${player.id}`)}>
+              Details
+            </button>
           </div>
         );
       })}

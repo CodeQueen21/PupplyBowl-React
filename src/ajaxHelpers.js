@@ -18,4 +18,19 @@ const fetchAllPlayers = async () => {
   }
 };
 
-export default fetchAllPlayers;
+const fetchSinglePlayer = async (playerId) => {
+  try {
+    const response = await fetch(`${PLAYERS}/${playerId}`);
+    if (!response.ok) {
+      console.log("API error", response.status);
+      return;
+    }
+    const jsonResponse = await response.json();
+    const results = jsonResponse.data;
+    return results.player;
+  } catch (error) {
+    console.error(`Oh no, trouble fetching player #${playerId}!`, err);
+  }
+};
+
+export { fetchAllPlayers, fetchSinglePlayer };

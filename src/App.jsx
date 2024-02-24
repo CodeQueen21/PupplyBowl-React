@@ -7,11 +7,11 @@ import SinglePlayer from "./components/SinglePlayer";
 
 function App() {
   return (
-    <div>
-      {/* <MainContainer /> */}
+    <div id="container">
       <Navbar />
+      <MainContainer />
+
       {/* <NewPlayer /> */}
-      <AllPlayers />
     </div>
   );
 }
