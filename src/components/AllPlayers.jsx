@@ -18,7 +18,7 @@ export default function AllPlayers() {
     <div id="all-players">
       {players.map((player) => {
         return (
-          <div key={player.id}>
+          <div id="player" key={player.id}>
             <h4>{player.name}</h4>
             <img src={player.imageUrl} />
             <p>Status: {player.status}</p>

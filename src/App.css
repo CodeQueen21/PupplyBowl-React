@@ -1,21 +1,45 @@
 * {
   text-align: center;
+  margin: 0;
+}
+#root {
+}
+div {
+  width: 100%;
 }
 
 #navbar {
-  background-color: yellow;
+  background-color: rgba(92, 11, 168, 0.852);
+  height: 50px;
+  margin-bottom: 50px;
+  position: sticky;
 }
 
-a {
-  margin: 25px;
+#navbar a {
+  color: white;
+  position: relative;
+  top: 10px;
 }
 
-div {
-  text-align: center;
-  margin: 0 auto;
+#player {
+  display: inline-block;
+  border: white solid 1px;
+  margin: 50px 20px 50px 20px;
+  width: 25%;
+  border-radius: 10px;
+  background-color: rgba(92, 11, 168, 0.852);
+  transition: background-color 0.5s ease-out 100ms;
+}
+
+#player:hover {
+  background-color: rgba(124, 21, 221, 0.972);
 }
 
 img {
   height: 150px;
   width: 150px;
+}
+
+button {
+  margin-bottom: 15px;
 }
