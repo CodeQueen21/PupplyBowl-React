@@ -9,9 +9,8 @@ function App() {
   return (
     <div id="container">
       <Navbar />
+      <NewPlayer />
       <MainContainer />
-
-      {/* <NewPlayer /> */}
     </div>
   );
 }

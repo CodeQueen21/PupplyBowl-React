@@ -2,8 +2,7 @@
   text-align: center;
   margin: 0;
 }
-#root {
-}
+
 div {
   width: 100%;
 }
@@ -21,6 +20,35 @@ div {
   top: 10px;
 }
 
+.container {
+}
+
+.search-bar-container {
+  padding-top: 20vh;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+h2 {
+  margin-bottom: 35px;
+}
+
+label {
+  margin: 0 15px 0;
+}
+
+input {
+  margin-left: 5px;
+}
+
+select {
+  margin-left: 5px;
+}
+
 #player {
   display: inline-block;
   border: white solid 1px;
@@ -32,7 +60,13 @@ div {
 }
 
 #player:hover {
-  background-color: rgba(124, 21, 221, 0.972);
+  background-color: rgba(135, 25, 238, 0.972);
+}
+
+h4,
+p {
+  margin: 15px 0 15px 0;
+  color: black;
 }
 
 img {
@@ -41,5 +75,5 @@ img {
 }
 
 button {
-  margin-bottom: 15px;
+  margin: 15px 0 15px 0;
 }
